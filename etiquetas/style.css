@@ -1,13 +1,20 @@
 html{
+    box-sizing: border-box;
     font-size: 62.5%;/**Reset para REMS - 62.5% = 10px de 16px **/
 }
-
+*, *:befero, *:after {
+    box-sizing: inherit;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 /** Global**/
+img {
+    max-width: 100%;
+}
 .contenedor{
     max-width: 120rem;/** = 1200px **/
     /*
@@ -38,7 +45,33 @@ h5{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.d-block {
+    display: block!important;
+}
+/**Botones**/
+.boton{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
 
+}
+.boton-amarillo{
+    background-color: #E08709;
+}
+.boton-verde{
+    background-color: #71B100;
+}
 
 /* header*/
 .site-header.inicio{
@@ -82,13 +115,51 @@ h5{
     margin:0;
 }
 /** Iconos Nosotros**/
+.encabezado-nosotros{
+    font-weight: 300;
+    text-align: center;
+}
 .iconos-nosotros{
     display: flex;
     justify-content: space-between;
 }
 .icono {
     flex-basis: cal(33.3% -1rem);
+    text-align: center;
 }
-
+.icono h3 {
+    text-transform: uppercase;
+/**Anuncios**/
+}
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc(33% - 1rem);
+    border: 1px solid #B5B5B5;
+    /** Tambien se pueden poner de esta forma
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;**/
+    background: #F5F5F5;
+}
+.contenido-anuncio {
+    /**La formas mas larga de separar tu contenido de adentro
+    padding-top: 2re;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+   **/
+    padding: 2rem;
+}
+.contenido-anuncio h3,
+.contenedor-anuncios p {
+    margin: 0;
+}
+.precio {
+    color: #71B100;
+    font-size: 700;
+}
 
 
